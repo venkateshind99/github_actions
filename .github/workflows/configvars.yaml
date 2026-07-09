@@ -16,7 +16,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Configuration Variable
-        run: |
-          echo print config var ONE $${{ vars.ONE }}
-          echo print config var TWO $${{ vars.TWO }}
+      - name: Configuration Variable ONE
+        run: echo print config var ONE $${{ vars.ONE }}
+
+      - name: Configuration Variable TWO
+        run: echo print config var TWO $${{ vars.TWO }}
+          
